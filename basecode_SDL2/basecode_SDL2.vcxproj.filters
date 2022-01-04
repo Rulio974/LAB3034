@@ -25,6 +25,12 @@
     <Filter Include="Fichiers sources\weapon\melee">
       <UniqueIdentifier>{3cc41088-be12-4b56-9851-0cc26632f1c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\character">
+      <UniqueIdentifier>{e9722a58-5434-4766-9eea-28d1418d9b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\character">
+      <UniqueIdentifier>{366d18db-3567-4513-9f2d-b52419a20517}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -41,6 +47,21 @@
     </ClCompile>
     <ClCompile Include="CSword.cpp">
       <Filter>Fichiers sources\weapon\melee</Filter>
+    </ClCompile>
+    <ClCompile Include="CCharacter.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CWarrior.cpp">
+      <Filter>Fichiers sources\character</Filter>
+    </ClCompile>
+    <ClCompile Include="CMage.cpp">
+      <Filter>Fichiers sources\character</Filter>
+    </ClCompile>
+    <ClCompile Include="CArcher.cpp">
+      <Filter>Fichiers sources\character</Filter>
+    </ClCompile>
+    <ClCompile Include="CRogue.cpp">
+      <Filter>Fichiers sources\character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +82,21 @@
     </ClInclude>
     <ClInclude Include="team.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CCharacter.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CWarrior.h">
+      <Filter>Fichiers d%27en-tête\character</Filter>
+    </ClInclude>
+    <ClInclude Include="CMage.h">
+      <Filter>Fichiers d%27en-tête\character</Filter>
+    </ClInclude>
+    <ClInclude Include="CArcher.h">
+      <Filter>Fichiers d%27en-tête\character</Filter>
+    </ClInclude>
+    <ClInclude Include="CRogue.h">
+      <Filter>Fichiers d%27en-tête\character</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

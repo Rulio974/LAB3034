@@ -1,6 +1,5 @@
 #include "utils.h"
-#include "CMelee.h"
-#include "CWeapon.h"
+
 
 enum class ePosition
 {
@@ -32,6 +31,10 @@ int main(int argc, char** argv)
 	CMelee m("Arc", 13, 0.2, 0.5, 10);
 	m.Print();
 
+	CWarrior wa("Jules", 20, w, 10, 30, 30, 30, 15, 100, 20, 15);
+	wa.CalculAttack(10);
+
+	CRogue r("Jules", 20, w, 10, 30, 30, 30, 15, 100, 20, 15);
 
 	if (!SDL_WasInit(SDL_INIT_VIDEO))
 	{

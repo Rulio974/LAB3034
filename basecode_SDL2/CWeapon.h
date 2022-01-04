@@ -6,13 +6,14 @@
 class CWeapon {
 protected:
 	std::string m_name;
-	int m_damage;
 	float m_critical;
 	float m_bonus;
 
-	CWeapon();
+	
 
 public:
+	int m_damage;
+	CWeapon();
 	CWeapon(std::string name, int damage, float critical, float bonus);
 	virtual ~CWeapon();
 

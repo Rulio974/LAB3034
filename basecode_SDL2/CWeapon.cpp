@@ -2,6 +2,7 @@
 
 CWeapon::CWeapon()
 {
+
 	std::string m_name;
 	int m_damage;
 	float m_critical;
