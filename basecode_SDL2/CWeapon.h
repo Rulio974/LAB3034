@@ -1,15 +1,19 @@
+#pragma once
+
 #include <string>
 #include <iostream>
 
 class CWeapon {
 protected:
-	std::string name;
-	int damage;
-	int critical;
-	float bonus;
+	std::string m_name;
+	int m_damage;
+	float m_critical;
+	float m_bonus;
+
+	CWeapon();
 
 public:
-	CWeapon(std::string name, int damage, int critical, int bonus);
+	CWeapon(std::string name, int damage, float critical, float bonus);
 	virtual ~CWeapon();
 
 	virtual void Print();

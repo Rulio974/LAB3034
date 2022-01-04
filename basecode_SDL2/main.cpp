@@ -1,4 +1,6 @@
 #include "utils.h"
+#include "CMelee.h"
+#include "CWeapon.h"
 
 enum class ePosition
 {
@@ -23,6 +25,13 @@ int main(int argc, char** argv)
 	int quit = 0;
 
 	ePosition pos = ePosition::DOWN;
+
+	CWeapon w("Baton", 10, 0.1, 0.1);
+	w.Print();
+
+	CMelee m("Arc", 13, 0.2, 0.5, 10);
+	m.Print();
+
 
 	if (!SDL_WasInit(SDL_INIT_VIDEO))
 	{

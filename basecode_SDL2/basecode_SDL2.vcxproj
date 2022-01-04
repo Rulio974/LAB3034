@@ -158,9 +158,18 @@ xcopy /I /Y "$(SolutionDir)basecode_SDL2\data" "$(SolutionDir)bin\x64\data\"</Co
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CDagger.cpp" />
+    <ClCompile Include="CMelee.cpp" />
+    <ClCompile Include="CSword.cpp" />
+    <ClCompile Include="CWeapon.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CDagger.h" />
+    <ClInclude Include="CMelee.h" />
+    <ClInclude Include="CSword.h" />
+    <ClInclude Include="CWeapon.h" />
+    <ClInclude Include="team.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,4 +1,12 @@
-﻿  main.cpp
+﻿  CDagger.cpp
+C:\Users\baril\Documents\basecode_SDL2\basecode_SDL2\CDagger.cpp(7,6): warning C4101: 'm_damage' : variable locale non référencée
+C:\Users\baril\Documents\basecode_SDL2\basecode_SDL2\CDagger.cpp(10,6): warning C4101: 'm_durability' : variable locale non référencée
+C:\Users\baril\Documents\basecode_SDL2\basecode_SDL2\CDagger.cpp(9,8): warning C4101: 'm_bonus' : variable locale non référencée
+C:\Users\baril\Documents\basecode_SDL2\basecode_SDL2\CDagger.cpp(8,8): warning C4101: 'm_critical' : variable locale non référencée
+C:\Users\baril\Documents\basecode_SDL2\basecode_SDL2\CDagger.cpp(19,19): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\baril\Documents\basecode_SDL2\basecode_SDL2\CDagger.cpp(20,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+  CSword.cpp
+  Génération de code en cours...
      Création de la bibliothèque C:\Users\baril\Documents\basecode_SDL2\bin\basecode_SDL2_d.lib et de l'objet C:\Users\baril\Documents\basecode_SDL2\bin\basecode_SDL2_d.exp
   basecode_SDL2.vcxproj -> C:\Users\baril\Documents\basecode_SDL2\bin\basecode_SDL2_d.exe
   C:\Users\baril\Documents\basecode_SDL2\librairies\SDL2-2.0.6\bin\Win32\libFLAC-8.dll

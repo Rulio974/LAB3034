@@ -13,14 +13,53 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\weapon">
+      <UniqueIdentifier>{4bae71d6-778f-4f68-9f81-7716fe59229a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\weapon\melee">
+      <UniqueIdentifier>{b133133f-f779-4e7c-a2d9-7060eb2850c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\weapon">
+      <UniqueIdentifier>{f035f1cf-8bc1-45d3-9e98-9ea11b0c128d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\weapon\melee">
+      <UniqueIdentifier>{3cc41088-be12-4b56-9851-0cc26632f1c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="CWeapon.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CMelee.cpp">
+      <Filter>Fichiers sources\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CDagger.cpp">
+      <Filter>Fichiers sources\weapon\melee</Filter>
+    </ClCompile>
+    <ClCompile Include="CSword.cpp">
+      <Filter>Fichiers sources\weapon\melee</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CWeapon.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CMelee.h">
+      <Filter>Fichiers d%27en-tête\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CSword.h">
+      <Filter>Fichiers d%27en-tête\weapon\melee</Filter>
+    </ClInclude>
+    <ClInclude Include="CDagger.h">
+      <Filter>Fichiers d%27en-tête\weapon\melee</Filter>
+    </ClInclude>
+    <ClInclude Include="team.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
