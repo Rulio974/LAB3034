@@ -31,6 +31,12 @@
     <Filter Include="Fichiers sources\character">
       <UniqueIdentifier>{366d18db-3567-4513-9f2d-b52419a20517}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\weapon\ranged">
+      <UniqueIdentifier>{b4b5b42c-3a1c-4919-8c89-e05c52c4df36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\weapon\ranged">
+      <UniqueIdentifier>{044d57a9-b354-4c42-89d5-105ba9ead6e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -57,11 +63,23 @@
     <ClCompile Include="CMage.cpp">
       <Filter>Fichiers sources\character</Filter>
     </ClCompile>
-    <ClCompile Include="CArcher.cpp">
-      <Filter>Fichiers sources\character</Filter>
-    </ClCompile>
     <ClCompile Include="CRogue.cpp">
       <Filter>Fichiers sources\character</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CRanged.cpp">
+      <Filter>Fichiers sources\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="CBow.cpp">
+      <Filter>Fichiers sources\weapon\ranged</Filter>
+    </ClCompile>
+    <ClCompile Include="CStaff.cpp">
+      <Filter>Fichiers sources\weapon\ranged</Filter>
+    </ClCompile>
+    <ClCompile Include="CArcher.cpp">
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +115,18 @@
     </ClInclude>
     <ClInclude Include="CRogue.h">
       <Filter>Fichiers d%27en-tête\character</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CRanged.h">
+      <Filter>Fichiers d%27en-tête\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="CBow.h">
+      <Filter>Fichiers d%27en-tête\weapon\ranged</Filter>
+    </ClInclude>
+    <ClInclude Include="CStaff.h">
+      <Filter>Fichiers d%27en-tête\weapon\ranged</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

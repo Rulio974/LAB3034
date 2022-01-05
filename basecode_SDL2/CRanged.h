@@ -4,8 +4,8 @@
 class CRanged : public CWeapon
 {
 protected :
-	int consumable;
-	int distance;
+	int m_consumable;
+	int m_distance;
 
 	CRanged();
 

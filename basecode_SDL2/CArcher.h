@@ -8,7 +8,7 @@ protected :
 
 public :
 	CArcher(std::string name, int health,
-		CWeapon weapon, int dodge,
+		CWeapon weapon, float dodge,
 		int speed, int attack, int defense,
 		int agility, int m_damage, int intelligence);
 

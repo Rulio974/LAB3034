@@ -11,7 +11,7 @@ protected:
 public:
 
 	CRogue(std::string name, int health,
-		CWeapon weapon, int dodge,
+		CWeapon weapon, float dodge,
 		int speed, int attack, int defense,
 		int agility, int intelligence, int damage, float poison);
 

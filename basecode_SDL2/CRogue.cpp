@@ -16,21 +16,21 @@ CRogue::CRogue()
 }
 
 CRogue::CRogue(std::string name, int health,
-	CWeapon weapon, int dodge,
+	CWeapon weapon, float dodge,
 	int speed, int attack, int defense,
 	int agility, int intelligence, int damage, float poison) {
 
-	std::string m_name = name;
-	int m_health = health;
-	CWeapon m_weapon = m_weapon;
-	int m_dodge = dodge;
-	int m_speed = speed;
-	int m_attack = attack;
-	int m_defense = defense;
-	int m_agility = agility;
-	int m_intelligence = intelligence;
-	float m_damage = damage;
-	float m_poison = poison;
+	m_name = name;
+	m_health = health;
+	m_weapon = m_weapon;
+	m_dodge = dodge;
+	m_speed = speed;
+	m_attack = attack;
+	m_defense = defense;
+	m_agility = agility;
+	m_intelligence = intelligence;
+	m_damage = damage;
+	m_poison = poison;
 
 }
 

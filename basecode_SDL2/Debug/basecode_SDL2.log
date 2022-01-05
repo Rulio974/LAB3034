@@ -1,66 +1,15 @@
-﻿  CArcher.cpp
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(11,6): warning C4101: 'm_defense' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(14,6): warning C4101: 'm_damage' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(6,6): warning C4101: 'm_health' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(8,6): warning C4101: 'm_dodge' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(10,6): warning C4101: 'm_attack' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(13,6): warning C4101: 'm_intelligence' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(12,6): warning C4101: 'm_agility' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(9,6): warning C4101: 'm_speed' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(31,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(39,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CArcher.cpp(42,61): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-  CCharacter.cpp
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(12,8): warning C4101: 'm_defense' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(14,8): warning C4101: 'm_damage' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(7,8): warning C4101: 'm_health' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(9,8): warning C4101: 'm_dodge' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(11,8): warning C4101: 'm_attack' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(15,8): warning C4101: 'm_intelligence' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(13,8): warning C4101: 'm_agility' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CCharacter.cpp(10,8): warning C4101: 'm_speed' : variable locale non référencée
-  CMage.cpp
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(12,6): warning C4101: 'm_defense' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(15,6): warning C4101: 'm_damage' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(7,6): warning C4101: 'm_health' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(9,6): warning C4101: 'm_dodge' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(11,6): warning C4101: 'm_attack' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(14,6): warning C4101: 'm_intelligence' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(13,6): warning C4101: 'm_agility' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(10,6): warning C4101: 'm_speed' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(16,6): warning C4101: 'm_mana' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(33,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(46,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CMage.cpp(49,61): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-  CRogue.cpp
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(11,6): warning C4101: 'm_defense' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(14,6): warning C4101: 'm_damage' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(6,6): warning C4101: 'm_health' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(8,6): warning C4101: 'm_dodge' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(10,6): warning C4101: 'm_attack' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(13,6): warning C4101: 'm_intelligence' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(12,6): warning C4101: 'm_agility' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(9,6): warning C4101: 'm_speed' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(32,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(44,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CRogue.cpp(47,61): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-  CWarrior.cpp
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(14,6): warning C4101: 'm_defense' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(9,6): warning C4101: 'm_health' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(11,6): warning C4101: 'm_dodge' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(13,6): warning C4101: 'm_attack' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(16,6): warning C4101: 'm_intelligence' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(15,6): warning C4101: 'm_agility' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(12,6): warning C4101: 'm_speed' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(17,6): warning C4101: 'm_parade' : variable locale non référencée
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(35,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\CWarrior.cpp(44,12): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-  main.cpp
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(28,33): warning C4305: 'argument' : troncation de 'double' à 'float'
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(31,27): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(31,22): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
-  Génération de code en cours...
-     Création de la bibliothèque C:\Users\Jules\Documents\TP final\bin\basecode_SDL2_d.lib et de l'objet C:\Users\Jules\Documents\TP final\bin\basecode_SDL2_d.exp
+﻿  main.cpp
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(90,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(106,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(156,73): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(159,74): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(162,73): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(165,71): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(196,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(211,20): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(226,33): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(241,31): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(247,33): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
   basecode_SDL2.vcxproj -> C:\Users\Jules\Documents\TP final\bin\basecode_SDL2_d.exe
   C:\Users\Jules\Documents\TP final\librairies\SDL2-2.0.6\bin\Win32\libFLAC-8.dll
   C:\Users\Jules\Documents\TP final\librairies\SDL2-2.0.6\bin\Win32\libfreetype-6.dll
@@ -80,5 +29,7 @@ C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(31,22): warning C4244: 
   C:\Users\Jules\Documents\TP final\librairies\SDL2-2.0.6\bin\Win32\smpeg2.dll
   C:\Users\Jules\Documents\TP final\librairies\SDL2-2.0.6\bin\Win32\zlib1.dll
   17 fichier(s) copié(s)
+  C:\Users\Jules\Documents\TP final\basecode_SDL2\data\characters.jdc
   C:\Users\Jules\Documents\TP final\basecode_SDL2\data\sprite.png
-  1 fichier(s) copié(s)
+  C:\Users\Jules\Documents\TP final\basecode_SDL2\data\weapons.jdc
+  3 fichier(s) copié(s)

@@ -14,7 +14,7 @@ CDagger::CDagger()
 CDagger::CDagger(std::string name, int damage, int critical, int bonus, int durability)
 {
 
-	std::string m_name	= name;
+	m_name	= name;
 	int m_damage		= damage;
 	float m_critical	= critical;
 	float m_bonus		= bonus;

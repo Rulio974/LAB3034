@@ -6,7 +6,7 @@ CCharacter::CCharacter()
 	std::string m_name;
 	int			m_health;
 	CWeapon   	m_weapon;
-	int			m_dodge;
+	float		m_dodge;
 	int			m_speed;
 	int			m_attack;
 	int			m_defense;
@@ -17,7 +17,7 @@ CCharacter::CCharacter()
 }
 
 CCharacter::CCharacter(std::string name, int health,
-	CWeapon weapon, int dodge,
+	CWeapon weapon, float dodge,
 	int speed, int attack, int defense,
 	int agility, int damage,  int intelligence){
 
