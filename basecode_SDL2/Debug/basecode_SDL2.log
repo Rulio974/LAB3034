@@ -1,16 +1,4 @@
-﻿  main.cpp
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(90,20): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(106,20): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(156,73): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(159,74): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(162,73): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(165,71): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(196,20): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(211,20): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(226,33): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(241,31): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(247,33): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
-  basecode_SDL2.vcxproj -> C:\Users\Jules\Documents\TP final\bin\basecode_SDL2_d.exe
+﻿  basecode_SDL2.vcxproj -> C:\Users\Jules\Documents\TP final\bin\basecode_SDL2_d.exe
   C:\Users\Jules\Documents\TP final\librairies\SDL2-2.0.6\bin\Win32\libFLAC-8.dll
   C:\Users\Jules\Documents\TP final\librairies\SDL2-2.0.6\bin\Win32\libfreetype-6.dll
   C:\Users\Jules\Documents\TP final\librairies\SDL2-2.0.6\bin\Win32\libjpeg-9.dll
@@ -31,5 +19,6 @@ C:\Users\Jules\Documents\TP final\basecode_SDL2\main.cpp(247,33): warning C4244:
   17 fichier(s) copié(s)
   C:\Users\Jules\Documents\TP final\basecode_SDL2\data\characters.jdc
   C:\Users\Jules\Documents\TP final\basecode_SDL2\data\sprite.png
+  C:\Users\Jules\Documents\TP final\basecode_SDL2\data\startprint.txt
   C:\Users\Jules\Documents\TP final\basecode_SDL2\data\weapons.jdc
-  3 fichier(s) copié(s)
+  4 fichier(s) copié(s)

@@ -1,4 +1,16 @@
 #include "utils.h"
+#include "CArcher.h"
+#include "CMage.h"
+#include "CRogue.h"
+#include "CWarrior.h"
+#include "CCharacter.h"
+#include "CWeapon.h"
+#include "team.h"
+#include "CDagger.h"
+#include "CSword.h"
+#include "CBow.h"
+#include "CStaff.h"
+#include "ascii.h"
 
 
 enum class ePosition
@@ -44,6 +56,9 @@ struct sCharacter
 
 
 
+
+
+
 int main(int argc, char** argv)
 {
 	sWeapon weapons;
@@ -60,21 +75,32 @@ int main(int argc, char** argv)
 
 	SDL_Event e;
 	int quit = 0;
-	int index = 0;
 
 	ePosition pos = ePosition::DOWN;
 
 	std::ifstream file("data/weapons.jdc");
 	std::ifstream file_2("data/characters.jdc");
 	std::string line;
+	std::string line_2;
 	std::string word;
+	std::string word_2;
 	std::vector<std::string> f_word;
+	std::vector<std::string> f_word_2;
 	std::stringstream ss;
 	std::ostringstream oss;
 	std::vector <std::string> tab;
+	std::vector <std::string> tab_2;
+
 	std::vector <CWeapon> TabWeapons;
+	std::vector <CCharacter*> TabCharacters;
+
+	int action;
 
 	int j = 0;
+	srand(time(NULL));
+	int tour  = (rand() % 1);
+
+	StartPrint();
 
 	if (!file.is_open())
 	{
@@ -98,6 +124,7 @@ int main(int argc, char** argv)
 		{
 			ss >> word;
 			f_word.push_back(word);
+			
 		}
 	}
 
@@ -107,6 +134,7 @@ int main(int argc, char** argv)
 	{
 		if (f_word[i] == "Weapon")
 		{
+			f_word[i + 1].clear();
 			while (f_word[i] != "EndWeapon")
 			{
 				
@@ -146,7 +174,7 @@ int main(int argc, char** argv)
 				
 				i++;
 				
-				//std::cout << j;
+			
 
 			}
 		}
@@ -156,8 +184,8 @@ int main(int argc, char** argv)
 			TabWeapons.push_back(CSword(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_durabilite));
 
 		if (weapons.s_type == "Dague")
-			TabWeapons.push_back(CDagger(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_durabilite));
-
+			TabWeapons.push_back( CDagger(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_durabilite));
+		
 		if (weapons.s_type == "Arc")
 			TabWeapons.push_back(CStaff(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_fleche, 0));
 
@@ -167,19 +195,8 @@ int main(int argc, char** argv)
 		i++;
 	}
 
-	/*for (int i = 0; i < TabWeapons.size(); i++)
-	*	TabWeapons[i].Print();
-	*/
-
-	tab.clear();
-	line.clear();
-	f_word.clear();
-	word.clear();
-
-
-
-	//*****************************************************
-
+	
+		
 
 
 	if (!file_2.is_open())
@@ -188,96 +205,175 @@ int main(int argc, char** argv)
 		return EXIT_FAILURE;
 	}
 
-	while (std::getline(file, line))
-		tab.push_back(line);
+	while (std::getline(file_2, line_2))
+	{
+		tab_2.push_back(line_2);
+		
+	}
 	file_2.close();
 
 
-	for (int i = 0; i < tab.size(); i++)
-	{
 
-		std::stringstream ss(tab[i]);
-		std::getline(ss, word, '\t');
-		std::cout << i;
-		f_word.push_back(word);
+	for (int i = 0; i < tab_2.size(); i++)
+	{
+		
+		std::stringstream ss(tab_2[i]);
+		std::getline(ss, word_2, '\t');
+	
+		
+		f_word_2.push_back(word_2);
+		
 		while (ss.good())
 		{
-			ss >> word;
-			f_word.push_back(word);
+			ss >> word_2;
+			f_word_2.push_back(word_2);
+			
+			
+			
+			//f_word_2[i + 1].clear();
+			
 		}
+		
+		
 	}
+	//for (int i = 0; i < f_word_2.size(); i++)
+	//std::cout << f_word_2[i] << "\n";
 
 
-	for (int i = 0; i < f_word.size(); i++)
+	for (int i = 0; i < f_word_2.size(); i++)
 	{
-		if (f_word[i] == "Weapon")
+		
+		if (f_word_2[i] == "Character")
 		{
-			std::cout << " OK" << "\n";
-			while (f_word[i] != "EndWeapon")
+			
+			while (f_word_2[i] != "EndCharacter")
 			{
+				
 
-				if (f_word[i] == "Classe")
-					characters.s_class = f_word[i + 1];
+				if (f_word_2[i] == "Classe")
+					characters.s_class = f_word_2[i + 1];
+				
 
-				if (f_word[i] == "Nom")
-					characters.s_nom = f_word[i + 1];
+				if (f_word_2[i] == "Nom")
+					characters.s_nom = f_word_2[i + 1];
 
-				if (f_word[i] == "Vitesse")
-					characters.s_vitesse = stof(f_word[i + 1]);
+				if (f_word_2[i] == "Vitesse")
+					characters.s_vitesse = stoi(f_word_2[i + 1]);
 
-				if (f_word[i] == "Attaque")
-					characters.s_attaque = stoi(f_word[i + 1]);
+				if (f_word_2[i] == "Attaque")
+					characters.s_attaque = stoi(f_word_2[i + 1]);
 
-				if (f_word[i] == "HP")
-					characters.s_HP = stoi(f_word[i + 1]);
+				if (f_word_2[i] == "HP")
+					characters.s_HP = stoi(f_word_2[i + 1]);
 
-				if (f_word[i] == "Intelligence")
-					characters.s_intelligence = stoi(f_word[i + 1]);
+				if (f_word_2[i] == "Intelligence")
+					characters.s_intelligence = stoi(f_word_2[i + 1]);
 
-				if (f_word[i] == "Defense")
-					characters.s_defense = stoi(f_word[i + 1]);
+				if (f_word_2[i] == "Defense")
+					characters.s_defense = stoi(f_word_2[i + 1]);
 
-				if (f_word[i] == "Dodge")
-					characters.s_dodge = stoi(f_word[i + 1]);
+				if (f_word_2[i] == "Dodge")
+					characters.s_dodge = stof(f_word_2[i + 1]);
 
-				if (f_word[i] == "Agilite")
-					characters.s_agilite = stoi(f_word[i + 1]);
+				if (f_word_2[i] == "Agilite")
+					characters.s_agilite = stoi(f_word_2[i + 1]);
 
-				if (f_word[i] == "Special")
-					characters.s_special = stoi(f_word[i + 1]);
+				if (f_word_2[i] == "Special")
+					characters.s_special = stof(f_word_2[i + 1]);
+
 
 				i++;
 
-				//std::cout << j;
-
 			}
+
 		}
+
+
+	
 
 
 		//TODO
 		//Try de creer les instances
 
-		/*if (characters.s_class == "Mage")
-			TabWeapons.push_back(CSword(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_durabilite));
+		if (characters.s_class == "Mage")
+			TabCharacters.push_back(new CMage(characters.s_class, characters.s_nom, characters.s_HP, CWeapon(),characters.s_dodge, characters.s_vitesse, characters.s_attaque, characters.s_defense, characters.s_agilite, characters.s_intelligence, 0,0));
 
 		if (characters.s_class == "Guerrier")
-			TabWeapons.push_back(CDagger(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_durabilite));
-
+			TabCharacters.push_back(new CWarrior(characters.s_class, characters.s_nom, characters.s_HP, CWeapon(), characters.s_vitesse, characters.s_attaque, characters.s_intelligence, characters.s_HP, characters.s_dodge, characters.s_agilite, 0, 0));
+			
+		
 		if (characters.s_class == "Archer")
-			TabWeapons.push_back(CStaff(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_fleche, 0));
+			TabCharacters.push_back(new CArcher(characters.s_class, characters.s_nom, characters.s_HP,  CWeapon(), characters.s_dodge,characters.s_vitesse, characters.s_attaque, characters.s_defense, characters.s_agilite, characters.s_intelligence, 0));
 
 		if (characters.s_class == "Voleur")
-			TabWeapons.push_back(CBow(weapons.s_name, weapons.s_damage, weapons.s_critical, 0, weapons.s_cout, 0));*/
+			TabCharacters.push_back(new CRogue(characters.s_class, characters.s_nom, characters.s_HP,  CWeapon(), characters.s_dodge, characters.s_vitesse, characters.s_attaque, characters.s_defense, characters.s_agilite, characters.s_intelligence, 0,0));
 
-		i++;
-		std::cout << characters.s_class;
+		
+
+		//std::cout <<f_word_2[i] << "\n";
+		
+		
 	}
 
 
+	std::vector<CTeam> Teams;
+	Teams.push_back(CTeam::CTeam());
+	Teams.push_back(CTeam::CTeam());
+
+	Teams[0].CreateTeam(1, TabCharacters, TabWeapons);
+	system("cls");
+	StartPrint();
+	Teams[1].CreateTeam(2, TabCharacters, TabWeapons);
+	
+	for (int i = 4; i > 0; i--)
+	{
+		std::cout << "\rdebut de la partie dans " << i;
+		Sleep(1000);
+	}
+	system("cls");
+	StartPrint();
+
+	std::cout << "\nC'est le joueur " << Teams[tour].m_name << " qui commence !\n";
+	Teams[tour].m_perso1->Action(tour, Teams);
+
+	while (tour != 3)
+	{
+		system("cls");
+		StartPrint();
+		std::cout << "\tInfos " << Teams[0].m_name << "\t\t\t" << "Infos " << Teams[1].m_name << "\n\n";
+		std::cout << "\tVie perso 1 : " << Teams[0].m_perso1->m_health << "\n" << Teams[0].m_perso2->m_health << "\n" << Teams[0].m_perso1->m_health << "\n";
+
+		tour = (tour + 1) % 2;
+		std::cout << "\nC'est au tour de " << Teams[tour].m_name << " de jouer\n\n";
+		std::cout << " de jouer\n\n Personnage : " << Teams[tour].m_perso1->m_name << "\n";
+		Teams[tour].m_perso1->Action(tour, Teams);
+		std::cout << " de jouer\n\n Personnage : " << Teams[tour].m_perso2->m_name << "\n";
+		Teams[tour].m_perso2->Action(tour, Teams);
+		std::cout << " de jouer\n\n Personnage : " << Teams[tour].m_perso3->m_name << "\n";
+		Teams[tour].m_perso3->Action(tour, Teams);
+	
+
+
+		if (Teams[0].m_perso1->m_health < 0 || Teams[1].m_perso1->m_health < 0)
+			tour = 3;
+
+	}
+
+	std::cout << "\nFINIIIIIIs";
+
+	return EXIT_SUCCESS;
+
+
+	//std::cout << TabCharacters[0].m_weapon.m_name;
+
+	/*for (int i = 0; i < TabWeapons.size(); i++)
+		TabWeapons[i].Print();*/
 
 
 
-	if (!SDL_WasInit(SDL_INIT_VIDEO))
+
+
+	/*if (!SDL_WasInit(SDL_INIT_VIDEO))
 	{
 		if (SDL_Init(SDL_INIT_VIDEO) != 0)
 		{
@@ -372,6 +468,6 @@ int main(int argc, char** argv)
 	SDL_DestroyWindow(window);
 	SDL_Quit();
 
-	return EXIT_SUCCESS;
+	return EXIT_SUCCESS;*/
 }
 

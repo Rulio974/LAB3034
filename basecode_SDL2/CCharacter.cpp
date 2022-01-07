@@ -1,8 +1,9 @@
 #pragma once
-#include "utils.h"
+#include "CCharacter.h"
 
 CCharacter::CCharacter()
 {
+	std::string m_type;
 	std::string m_name;
 	int			m_health;
 	CWeapon   	m_weapon;
@@ -16,11 +17,12 @@ CCharacter::CCharacter()
 
 }
 
-CCharacter::CCharacter(std::string name, int health,
+CCharacter::CCharacter(std::string type, std::string name, int health,
 	CWeapon weapon, float dodge,
 	int speed, int attack, int defense,
 	int agility, int damage,  int intelligence){
 
+	m_type			= type;
 	m_name			= name;
 	m_health		= health;
 	m_weapon		= weapon;
@@ -37,3 +39,6 @@ CCharacter::CCharacter(std::string name, int health,
 }
 
 CCharacter::~CCharacter() {}
+
+void ChooseWeapon(int team, std::vector <CWeapon> TabWeapons)
+{}

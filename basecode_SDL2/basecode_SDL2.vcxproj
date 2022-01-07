@@ -158,6 +158,7 @@ xcopy /I /Y "$(SolutionDir)basecode_SDL2\data" "$(SolutionDir)bin\x64\data\"</Co
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ascii.cpp" />
     <ClCompile Include="CArcher.cpp" />
     <ClCompile Include="CBow.cpp" />
     <ClCompile Include="CCharacter.cpp" />
@@ -171,9 +172,10 @@ xcopy /I /Y "$(SolutionDir)basecode_SDL2\data" "$(SolutionDir)bin\x64\data\"</Co
     <ClCompile Include="CWarrior.cpp" />
     <ClCompile Include="CWeapon.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="team.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ascii.h" />
     <ClInclude Include="CArcher.h" />
     <ClInclude Include="CBow.h" />
     <ClInclude Include="CCharacter.h" />
@@ -186,7 +188,6 @@ xcopy /I /Y "$(SolutionDir)basecode_SDL2\data" "$(SolutionDir)bin\x64\data\"</Co
     <ClInclude Include="CSword.h" />
     <ClInclude Include="CWarrior.h" />
     <ClInclude Include="CWeapon.h" />
-    <ClInclude Include="Parser.h" />
     <ClInclude Include="team.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>

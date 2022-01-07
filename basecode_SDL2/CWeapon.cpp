@@ -7,15 +7,17 @@ CWeapon::CWeapon()
 	int m_damage;
 	float m_critical;
 	float m_bonus;
+	int m_durability;
 
 }
 
-CWeapon::CWeapon(std::string name, int damage, float critical, float bonus)
+CWeapon::CWeapon(std::string name, int damage, float critical, float bonus, int durability)
 {
 	m_name		=	name;
 	m_damage	=	damage;
 	m_critical	=	critical;
 	m_bonus		=	bonus;
+	m_durability = 0;
 
 }
 
